@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace FigureDraw
 {
-     abstract class Shape
+    abstract class EffectedShape:Shape
     {
-
-        protected ShapeInfo info;
-
-        public abstract void draw(CommonGraphics g);
-
+        public Shape shape;
+        protected abstract void format(CommonGraphics g, Shape shape);
     }
 }

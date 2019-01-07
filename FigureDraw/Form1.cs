@@ -96,6 +96,7 @@ namespace FigureDraw
                 case 0:
                     Shape line = new Line(Start, End);
                     line.draw(gdi);
+                    
                     break;
                 case 1:
                     Shape rect = new Rect(Start, End);
@@ -121,6 +122,10 @@ namespace FigureDraw
                 case 6:
                     ABlock inputbl = fac2.createInputBlock(temp);
                     inputbl.draw(gdi);
+                    break;
+                case 7:
+                    Shape star = new Star(Start, End);
+                    star.draw(gdi);
                     break;
                 default:
                     break;
@@ -195,6 +200,17 @@ namespace FigureDraw
         private void inputBlockToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             ShapeType = 6;
+        }
+
+        private void starToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShapeType = 7;
+            
+        }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelcontrol.Invalidate();
         }
     }
 }

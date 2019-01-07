@@ -78,12 +78,15 @@
     <Compile Include="GdiPlusCommonGraphics.cs" />
     <Compile Include="GdiPlusJpegGraphics.cs" />
     <Compile Include="GdiPlusPngGraphics.cs" />
+    <Compile Include="Shape\EffectedShape.cs" />
     <Compile Include="Shape\Line.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shape\Rect.cs" />
+    <Compile Include="Shape\ShadowShape.cs" />
     <Compile Include="Shape\Shape.cs" />
     <Compile Include="Shape\ShapeInfo.cs" />
+    <Compile Include="Shape\Star.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
